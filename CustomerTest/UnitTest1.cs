@@ -13,6 +13,7 @@ namespace CustomerTest
         [TestMethod]
         public void TestMethod1()
         {
+            Assert.Fail("Not implemented yet");
         }
 
         // TODO ELEV Opret en test der kontrolerer antal point ved køb af 0 varer
