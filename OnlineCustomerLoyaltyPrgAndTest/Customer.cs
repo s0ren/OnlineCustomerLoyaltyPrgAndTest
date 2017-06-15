@@ -14,5 +14,9 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
         {
             Id = new Guid();
         }
+
+        // TODO ELEV opret metoden getMyPointsForPurchase(vendor, productId, qty)
+        // TODO ELEV Implementer en måde at huske om vi har købt samme vare hos samme leverandør før, f.eks. med Dictionary<ProductVendor, int>
+
     }
 }

@@ -28,6 +28,9 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
 
         public int requirePoints(Customer customer, int itemId, int qty)
         {
+            // TODO LÆRER check om itemId findes pointList
+            // TODO LÆRER check om qty er et POSITIVT tal
+
             if (qty == 0 || itemId == 0)
             {
                 return 0;
@@ -35,6 +38,9 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
             else
             {
                 return pointList[itemId] * qty;
+                // TODO LÆRER brug customerPurcheses til at checke om brugeren har købt en anden vare hos os før := mere rabat
+                // TODO LÆRER brug customerPurcheses til at checke om brugeren har købt samme vare hos os før := mindre rabat
+                
             }
         }
     }
