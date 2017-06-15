@@ -8,6 +8,11 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
 {
     public class Customer
     {
+        public Guid Id { get; private set; }
 
+        public Customer()
+        {
+            Id = new Guid();
+        }
     }
 }

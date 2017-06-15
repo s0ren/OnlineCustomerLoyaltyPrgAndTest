@@ -11,7 +11,9 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
     {
         //private int pointSaldo = 0; 
 
-        System.Collections.Generic.Dictionary<int, int> pointList;
+        Dictionary<int, int> pointList;
+        Dictionary<String, int> customerPurchases;
+        
 
         public ProductVendor(int initialPoints)
         {
