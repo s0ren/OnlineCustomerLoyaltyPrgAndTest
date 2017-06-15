@@ -2,11 +2,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OnlineCustomerLoyaltyPrgAndTestNS;
 
-namespace VendorTestSimplePoint
+namespace VendorTest
 {
 
     [TestClass]
-    public class givPoint
+    public class givSimplePoint
     {
         
         ProductVendor Hat_ProdVendor;
