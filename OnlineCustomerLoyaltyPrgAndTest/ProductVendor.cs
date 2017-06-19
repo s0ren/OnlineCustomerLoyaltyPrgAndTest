@@ -56,7 +56,6 @@ namespace OnlineCustomerLoyaltyPrgAndTestNS
                 if(!customerPurchases.ContainsKey(customer.Id.ToString() + itemId.ToString()))
                 {
                     boostReward = (int)Math.Ceiling(pointList[itemId] / 2.0) ;
-
                     customerPurchases[customer.Id.ToString() + itemId.ToString()] = qty;
                 }
 

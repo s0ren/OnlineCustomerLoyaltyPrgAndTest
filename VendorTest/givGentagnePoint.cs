@@ -71,7 +71,7 @@ namespace VendorTest
 
             // first item again, two of them
             points = Hat_ProdVendor.requirePoints(customer2, 1, 2);
-            Assert.AreEqual(10, points);
+            Assert.AreEqual(6, points);
 
 
         }
