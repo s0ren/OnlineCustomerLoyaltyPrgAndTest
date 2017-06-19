@@ -35,7 +35,7 @@ namespace VendorTest
 
             // another item
             points = Hat_ProdVendor.requirePoints(customer, 2, 1);
-            Assert.AreEqual(10, points);
+            Assert.AreEqual(11, points);
         }
 
         [TestMethod]
@@ -47,28 +47,24 @@ namespace VendorTest
 
             // two of another item
             points = Hat_ProdVendor.requirePoints(customer, 2, 1);
-            Assert.AreEqual(10, points);
+            Assert.AreEqual(11, points);
         }
 
         [TestMethod]
         public void badItemId()
         {
-            Hat_ProdVendor.requirePoints(customer, 117, 1);
+            int points = Hat_ProdVendor.requirePoints(customer, 117, 1);
+            Assert.AreEqual(0, points);
 
             Hat_ProdVendor.requirePoints(customer, -117, 1);
+            Assert.AreEqual(0, points);
+
         }
         [TestMethod]
         public void badItemQty()
         {
-            try
-            {
-                Hat_ProdVendor.requirePoints(customer, 1, -1);
-            }
-            catch (ArgumentException ae)
-            {
-
-            }
-            Assert.Fail("ArgumentException expected");
+            int points = Hat_ProdVendor.requirePoints(customer, 1, -1);
+            Assert.AreEqual(0, points);
         }
 
 
